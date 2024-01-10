@@ -1,0 +1,49 @@
+/* chess.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#chessboard {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.light {
+    background-color: #f0d9b5; /* Light square color */
+}
+
+.dark {
+    background-color: #b58863; /* Dark square color */
+}
+
+.piece {
+    font-size: 45px; /* Updated font size */
+    text-align: center;
+    line-height: 75px; /* Updated line-height */
+    color: #fff; /* This line changes the text color to white */
+}
+
+.white {
+    color: #fff; /* White pieces */
+}
+
+.black {
+    color: #000; /* Black pieces */
+}
